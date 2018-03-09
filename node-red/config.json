@@ -9,6 +9,7 @@
     "startup": "application",
     "boot": "auto",
     "map": ["share:rw", "ssl"],
+    "gpio": true,
     "hassio_api": true,
     "host_network": true,
     "ports": {

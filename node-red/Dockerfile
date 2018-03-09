@@ -5,6 +5,8 @@ ENV LANG C.UTF-8
 
 RUN apk add --no-cache jq nodejs git openssh-keygen curl
 
+RUN apk add --no-cache py-rpigpio; exit 0
+
 RUN curl -o /waiting https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && \
     chmod +x /waiting
 
